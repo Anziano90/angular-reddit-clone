@@ -1,0 +1,26 @@
+<div class="three wide column center aligned">
+  <div class="value">
+    {{this.post.votes}}
+  </div>
+  <div class="label">
+    Points
+  </div>
+</div>
+
+<div class="nine wide column">
+  <a class="ui header" href="{{this.post.link}}"> {{this.post.title}} </a>
+  <ul class="ui list">
+    <li class="item">
+      <a href (click)="voteUp()">
+        <i class="arrow up icon"></i>
+        upvote
+      </a>
+    </li>
+    <li>
+      <a href (click)="voteDown()">
+        <i class="arrow down icon"></i>
+        downvote
+      </a>
+    </li>
+  </ul>
+</div>
